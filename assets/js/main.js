@@ -55,7 +55,7 @@ list.forEach((element, index) => {
     html = html +
 
         `<div class="product ` + (index % 7 == 0 ? "hero" : "") + `">
-    <a href="`+ element.picture + `">
+    <a href="`+ element.link + `">
         <img src="./assets/img/`+ element.picture + `" alt="Bild: ` + element.product_name + `">
     </a>
     <div class="product_info">
@@ -67,5 +67,6 @@ list.forEach((element, index) => {
 
 });
 
+document.read
 document.getElementById("products").innerHTML = html.replace('\n', '');
 // console.log(html);
